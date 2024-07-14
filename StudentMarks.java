@@ -58,6 +58,22 @@ public class StudentMarks
         
         // now let's find out the highest and lowest mark
         
+        float highestMark = marks [0];
+        float lowestMark  = marks [0];
+        
+        for (int k=1; k< numberOfStudents; k++){
+            if (marks[k]> highestMark) {
+                highestMark= marks[k];
+            }
+            if (marks [k] < lowestMark){
+                lowestMark = marks[k];
+            }
+            
+            
+        }
+        System.out.println ("\nHighest Mark: " + highestMark);
+        System.out.println ("\n LowestMark: "  + lowestMark);
+        
         
       
          
