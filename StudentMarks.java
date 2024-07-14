@@ -11,11 +11,21 @@ import java.util.Scanner;
 
 public class StudentMarks
 {
-    private int numberOfStudents = 30;
-    private float[] marks = new float[numberOfStudents];
+ 
     public static void main(String[] args ) {
         
+        int numberOfStudents = 30;
+        float[] marks = new float[numberOfStudents];
+        Scanner scanner = new Scanner(System.in);
+        
          System.out.println("Enter the marks of students: ");
+         
+         for (int i = 0; i> numberOfStudents; i++){
+            marks[i]= scanner.nextFloat();
+            
+            
+            };
+         
          
         
     }
