@@ -39,7 +39,7 @@ public class StudentMarks
                 float mark = scanner.nextFloat();
 
                 // Checking if mark is valid
-                if (mark > 0 || mark <= 30) {
+                if (mark > 0 && mark <= 30) {
                     marks[i] = mark; // valdating the user inputs 
                     break; // exit loop if user has provided the valid mark
                 } else {
@@ -61,6 +61,8 @@ public class StudentMarks
         float highestMark = marks [0];
         float lowestMark  = marks [0];
         
+        //entering loop where we can find out highest mark by comparing with
+        // other inputs tha user has provided.
         for (int k=1; k< numberOfStudents; k++){
             if (marks[k]> highestMark) {
                 highestMark= marks[k];
@@ -74,6 +76,17 @@ public class StudentMarks
         System.out.println ("\nHighest Mark: " + highestMark);
         System.out.println ("\n LowestMark: "  + lowestMark);
         
+        //calcuating the mean 
+        
+        float sum = 0;
+        for (float mark: marks) //entering loop for adding marks with the variable mark.
+        {
+        sum = sum + mark;
+    }
+    float mean = sum/numberOfStudents;
+    System.out.println("the mean is: " +mean);
+    
+    
         
       
          
