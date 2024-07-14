@@ -31,15 +31,6 @@ public class StudentMarks
          System.out.println("Enter the marks of all students: ");
          
          
-         //for (int i = 0; i< numberOfStudents; i++){
-             //let's create a program to check the validity of the marks given.
-           //  float checkMarks = scanner.nextFloat();
-             //if (checkMarks <=0 || checkMarks > 30){
-               // System.out.println("Invalid marks, Please enter the valid marks");
-            //}
-            //marks[i]= checkMarks;
-             
-           // };
             
              for (int i = 0; i < numberOfStudents; i++) {
             while (true) {
@@ -58,30 +49,17 @@ public class StudentMarks
         }
           
             
-         //System.out.println("Entered Marks: ");
-         //for (int j = 0; j<numberOfStudents; j++ ){
-          //System.out.println(marks[j]);
-        //}
-        
+
          // Printing  entered marks
         System.out.println("\nEntered Marks:");
         for (int j = 0; j < numberOfStudents; j++) {
             System.out.println("Student " + (j + 1) + ": " + marks[j]);
         }
         
-        //finding out and print
-        //let's create a code for mean first and go for the 
-        // highest and lowest later.
-        //mean = sum of all marks /number of marks
+        // now let's find out the highest and lowest mark
         
-        float totalMarks = 0;
         
-        for (int i=0; i<numberOfStudents; i++){
-            totalMarks = totalMarks + marks[i];
-            
-        }
-        
-        float mean = totalMarks / numberOfStudents;
+      
          
          
          
