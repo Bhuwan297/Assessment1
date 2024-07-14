@@ -36,6 +36,19 @@ public class StudentMarks
          for (int j = 0; j<numberOfStudents; j++ ){
           System.out.println(marks[j]);
         }
+        
+        //let's create a code for mean first and go for the 
+        // highest and lowest later.
+        //mean = sum of all marks /number of marks
+        
+        float totalMarks = 0;
+        
+        for (int i=0; i<numberOfStudents; i++){
+            totalMarks = totalMarks + marks[i];
+            
+        }
+        
+        float mean = totalMarks / numberOfStudents;
          
          
          
