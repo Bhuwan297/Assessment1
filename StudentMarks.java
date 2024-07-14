@@ -14,10 +14,14 @@ public class StudentMarks
  
     public static void main(String[] args ) {
         
+        //defining the number of students 
         int numberOfStudents = 30;
+        
+        //creating array to store the marks
         float[] marks = new float[numberOfStudents];
         Scanner scanner = new Scanner(System.in);
         
+        // promt for users to enter the marks 
          System.out.println("Enter the marks of all students: ");
          
          
