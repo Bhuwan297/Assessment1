@@ -93,8 +93,8 @@ public class StudentMarks
             
             
         }
-        System.out.println ("\nHighest Mark: " + highestMark); // print the highest mark
-        System.out.println ("\n LowestMark: "  + lowestMark);  // print the lowest mark
+        System.out.println ("\nHighest Mark among all the marks is: " + highestMark); // print the highest mark
+        System.out.println ("\n LowestMark obtained among all the marks is: "  + lowestMark);  // print the lowest mark
         
         // now let's dive into calculating the mean.
         // in mean we will add up all the marks and 
@@ -110,8 +110,7 @@ public class StudentMarks
     
     
 
-// In standard deviation... 
-// we do 
+//  standard deviation... 
 
 float sumOfSquares = 0; // here we Initialize a variable to store 
                         //the sum of squared differences from the mean
