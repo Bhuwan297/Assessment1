@@ -109,15 +109,9 @@ public class StudentMarks
     System.out.println("the mean is: " +mean); // printing the average.
     
     
-// now let's dive into calculating the standard deviation, although this task
-// was too tough to go through for a complete beginner,
-// however I have to go through the java course online and with there was not enough
-// resources for this in our course content.
-// and with the help of bit of a research I have managed to come up with the 
-// solution. 
 
 // In standard deviation... 
-// we do step, 1., 2, and 3
+// we do 
 
 float sumOfSquares = 0; // here we Initialize a variable to store 
                         //the sum of squared differences from the mean
@@ -126,8 +120,15 @@ for (float mark: marks ) { //we create a loop through each marks in the marks ar
     sumOfSquares += (mark - mean) * (mark - mean); 
 // now we Calculate the square of the difference between the mark 
 //and the mean, and add it to sumOfSquares
+}
+float variance = sumOfSquares / numberOfStudents; // here we Calculate variance by dividing sumOfSquares by the number of students
+float standardDeviation = (float) Math.sqrt(variance); // calculating standard deviation by taking the square root of the variance.
+System.out.println("Standard Deviation: "+ standardDeviation); // print the standard deviation value
 
 }
+}
+
+
  
 
 
@@ -140,6 +141,3 @@ for (float mark: marks ) { //we create a loop through each marks in the marks ar
          
          
         
-    }
-    
-}
