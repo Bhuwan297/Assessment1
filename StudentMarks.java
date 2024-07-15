@@ -1,7 +1,7 @@
 
 /**
- * This class is created by southern cross student, A complete beginner in this 
- * this is just a small and best put effor to come accross the solution for 
+ * This class is created by southern cross student, A complete beginner in this, 
+ * this is just a small and best put effort to come accross the solution for 
  * the given task, where we will be:
  * 
  * 1. getting marks of students from user
@@ -40,13 +40,18 @@ public class StudentMarks
         // this is the promt for users to enter the marks  
          System.out.println("Enter the marks of all students: ");
          
-        // let's create loop to input marks and validate.
+        // let's create a loop to input marks and validate.
+        // This is a loop that will run once for each student (30 times in our case)
         
              for (int i = 0; i < numberOfStudents; i++) {
             while (true) {
-                // this is the Prompt for mark
+                // This is an infinite loop that will keep asking for input
+                //until we get a valid mark
+                
                 System.out.print("Enter the marks for student " + (i + 1) + ": ");
-                float mark = scanner.nextFloat();
+                float mark = scanner.nextFloat(); //this  line prints a message asking the user to enter a mark for the current student
+        // (i + 1) is used because arrays start at 0, but we want to display student numbers starting from 1
+
 
                 // here we are Checking if given mark is valid or not by using
                 // and method where we are asking
@@ -55,6 +60,8 @@ public class StudentMarks
                     break; // exit loop if user has provided the valid mark
                 } else {
                     System.out.println("Invalid mark! Please enter a mark between 0 and 30.");
+                    //If the mark is not valid, this line prints an error message and the loop continues
+            // The user is prompted to enter the mark again
                 }
             }
         }
@@ -69,25 +76,29 @@ public class StudentMarks
         
         // now let's find out the highest and lowest mark
         
-        float highestMark = marks [0];
-        float lowestMark  = marks [0];
+        float highestMark = marks [0]; // let's Assume the first mark is the highest one
+        float lowestMark  = marks [0]; // and again let's Assume the first mark is the lowest
         
         //entering loop where we can find out highest mark by comparing with
-        // other inputs tha user has provided.
+        // other inputs that user has provided.
         for (int k=1; k< numberOfStudents; k++){
-            if (marks[k]> highestMark) {
-                highestMark= marks[k];
+            if (marks[k]> highestMark) // If current mark is higher,update highestMark 
+            {
+                highestMark= marks[k];  
             }
-            if (marks [k] < lowestMark){
+            if (marks [k] < lowestMark) // If current mark is lower, update lowestMark
+            {
                 lowestMark = marks[k];
             }
             
             
         }
-        System.out.println ("\nHighest Mark: " + highestMark);
-        System.out.println ("\n LowestMark: "  + lowestMark);
+        System.out.println ("\nHighest Mark: " + highestMark); // print the highest mark
+        System.out.println ("\n LowestMark: "  + lowestMark);  // print the lowest mark
         
-        //calcuating the mean 
+        //now let's dive into calculating the mean.
+        // in mean we will add up all the marks and 
+        // We divide the total by the number of students to get the average.
         
         float sum = 0;
         for (float mark: marks) //entering loop for adding marks with the variable mark.
