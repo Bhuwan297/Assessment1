@@ -1,9 +1,19 @@
 
 /**
- * Write a description of class StudentMarks here.
+ * This class is created by southern cross student, A complete beginner in this 
+ * this is just a small and best put effor to come accross the solution for 
+ * the given task, where we will be:
+ * 
+ * 1. getting marks of students from user
+ * 2. printing the marks 
+ * 3. calculating the highest and lowest mark entered 
+ * 3. trying to calculate the mean
+ * 4. although it might not be perfect, being a complete beginner, I have 
+ * tried put my best effort for calculating the standard deviation as well. 
+ * 
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Bhuwan Kandel
+ * @version 15th july 2024
  */
 
 import java.util.Scanner;
@@ -16,29 +26,30 @@ public class StudentMarks
         Scanner scanner = new Scanner(System.in);
 
         
-        System.out.print("Enter the assignment name: ");
-        String assignmentName = scanner.nextLine();
+        System.out.print("Enter the assignment name: "); // here we are asking for the assignment 
+        String assignmentName = scanner.nextLine();      // name from the user to make it more realistic to the real world.
         
         
         
-        //defining the number of students 
+        //here we are defining the number of students 
         int numberOfStudents = 30;
         
-        //creating array to store the marks
+        //creating array to store the marks of students.
         float[] marks = new float[numberOfStudents];
         
-        // promt for users to enter the marks 
+        // this is the promt for users to enter the marks  
          System.out.println("Enter the marks of all students: ");
          
-         
-            
+        // let's create loop to input marks and validate.
+        
              for (int i = 0; i < numberOfStudents; i++) {
             while (true) {
-                // Prompt for mark
+                // this is the Prompt for mark
                 System.out.print("Enter the marks for student " + (i + 1) + ": ");
                 float mark = scanner.nextFloat();
 
-                // Checking if mark is valid
+                // here we are Checking if given mark is valid or not by using
+                // and method where we are asking
                 if (mark > 0 && mark <= 30) {
                     marks[i] = mark; // valdating the user inputs 
                     break; // exit loop if user has provided the valid mark
@@ -85,6 +96,8 @@ public class StudentMarks
     }
     float mean = sum/numberOfStudents;
     System.out.println("the mean is: " +mean);
+    
+    
     
     
         
