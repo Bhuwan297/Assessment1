@@ -116,7 +116,19 @@ public class StudentMarks
 // and with the help of bit of a research I have managed to come up with the 
 // solution. 
 
-// In standard deviation...  
+// In standard deviation... 
+// we do step, 1., 2, and 3
+
+float sumOfSquares = 0; // here we Initialize a variable to store 
+                        //the sum of squared differences from the mean
+
+for (float mark: marks ) { //we create a loop through each marks in the marks array
+    sumOfSquares += (mark - mean) * (mark - mean); 
+// now we Calculate the square of the difference between the mark 
+//and the mean, and add it to sumOfSquares
+
+}
+ 
 
 
     
