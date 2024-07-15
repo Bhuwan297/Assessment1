@@ -96,18 +96,29 @@ public class StudentMarks
         System.out.println ("\nHighest Mark: " + highestMark); // print the highest mark
         System.out.println ("\n LowestMark: "  + lowestMark);  // print the lowest mark
         
-        //now let's dive into calculating the mean.
+        // now let's dive into calculating the mean.
         // in mean we will add up all the marks and 
         // We divide the total by the number of students to get the average.
         
         float sum = 0;
         for (float mark: marks) //entering loop for adding marks with the variable mark.
         {
-        sum = sum + mark;
+        sum = sum + mark; // here we are  Adding  each mark to sum
     }
-    float mean = sum/numberOfStudents;
-    System.out.println("the mean is: " +mean);
+    float mean = sum/numberOfStudents;  // calculating the average  
+    System.out.println("the mean is: " +mean); // printing the average.
     
+    
+// now let's dive into calculating the standard deviation, although this task
+// was too tough to go through for a complete beginner,
+// however I have to go through the java course online and with there was not enough
+// resources for this in our course content.
+// and with the help of bit of a research I have managed to come up with the 
+// solution. 
+
+// In standard deviation...  
+
+
     
     
     
